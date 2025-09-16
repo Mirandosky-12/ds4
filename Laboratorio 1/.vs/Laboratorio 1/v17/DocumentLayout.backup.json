@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Laboratorio 1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Laboratorio 1\\.gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8706257-0CAD-4753-AF26-483710BF00B7}|Laboratorio 1\\Laboratorio 1.csproj|c:\\users\\hp elitebook 840 g8\\source\\repos\\ds4\\laboratorio 1\\laboratorio 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8706257-0CAD-4753-AF26-483710BF00B7}|Laboratorio 1\\Laboratorio 1.csproj|solutionrelative:laboratorio 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Laboratorio 1\\.gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": ".gitignore.txt",
               "DocumentMoniker": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Laboratorio 1\\.gitignore.txt",
               "RelativeDocumentMoniker": ".gitignore.txt",
@@ -30,18 +30,17 @@
               "RelativeToolTip": ".gitignore.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-09-09T13:04:48.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T13:04:48.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Laboratorio 1\\Laboratorio 1\\Program.cs",
               "RelativeDocumentMoniker": "Laboratorio 1\\Program.cs",
               "ToolTip": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Laboratorio 1\\Laboratorio 1\\Program.cs",
               "RelativeToolTip": "Laboratorio 1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T00:51:01.904Z",
               "EditorCaption": ""
