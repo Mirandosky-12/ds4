@@ -11,16 +11,16 @@ using System.Windows.Forms;
 
 namespace Laboratorio_14
 {
-    public partial class Form1 : Form
+    public partial class frmProductos : Form
     {
         string connectionstring = @"Server=MIRANDAS-DESKTO\SQLEXPRESS05;Database=Productos;Trusted_Connection=True;";
         bool nuevo;
-        public Form1()
+        public frmProductos()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void frmProductos_Load(object sender, EventArgs e)
         {
             tsbNuevo.Enabled = true;
             tsbGuardar.Enabled = false;
@@ -78,7 +78,7 @@ namespace Laboratorio_14
             }
             else
             {
-                string sql = "UPDATE Laptops SET NOMBRE='" + txtNombre.Text + "', PRECIO='" + txtPrecio.Text + "', STOCK='" + txtStock.Text + "' WHERE ID=" + txtId.Text;
+                string sql = "UPDATE Laptops SER NOMBRE='" + txtNombre.Text + "'PRECIO='" + txtPrecio.Text + "' , " + "STOCK+'" + txtStock.Text + "' WHERE id=" + txtId.Text + "";
                 SqlConnection con = new SqlConnection(connectionstring);
                 SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.CommandType = CommandType.Text;
@@ -88,7 +88,7 @@ namespace Laboratorio_14
                     int i = cmd.ExecuteNonQuery();
                     if (i > 0)
                     {
-                        MessageBox.Show("Registro actualizado correctamente!");
+                        MessageBox.Show("Registro actualizado correctamente");
                     }
                 }
                 catch (Exception ex)
@@ -134,7 +134,7 @@ namespace Laboratorio_14
 
         private void tsbEliminar_Click(object sender, EventArgs e)
         {
-            string sql = "DELETE FROM Laptops WHERE ID='" + this.txtId.Text + "';";
+            string sql = "DELETE FROM Laptops WHERE id='" + this.txtId.Text + "';";
             SqlConnection con = new SqlConnection(connectionstring);
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
@@ -172,7 +172,7 @@ namespace Laboratorio_14
 
         private void tsbBuscar_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM Laptops WHERE ID=" + txtId.Text;
+            string sql = "SELECT * FROM Laptops WHERE id='" + this.txtId.Text;
             SqlConnection con = new SqlConnection(connectionstring);
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
@@ -202,7 +202,7 @@ namespace Laboratorio_14
                 }
                 else
                 {
-                    MessageBox.Show("Ningun resgistro encontrado con el Id ingresado!");
+                    MessageBox.Show("Ningun registro encontrado con el Id ingresado!");
                 }
             }
             catch (Exception ex)
@@ -214,11 +214,6 @@ namespace Laboratorio_14
                 con.Close();
             }
             tstId.Text = "";
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
