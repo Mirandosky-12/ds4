@@ -1,0 +1,12 @@
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\bin\Debug\Parcial 2.exe.config
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\bin\Debug\Parcial 2.exe
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\bin\Debug\Parcial 2.pdb
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\obj\Debug\Parcial 2.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\obj\Debug\Parcial_2.fmConversor.resources
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\obj\Debug\Parcial_2.Form2.resources
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\obj\Debug\Parcial_2.Properties.Resources.resources
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\obj\Debug\Parcial 2.csproj.GenerateResource.cache
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\obj\Debug\Parcial 2.csproj.CoreCompileInputs.cache
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\obj\Debug\Parcial 2.exe
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\obj\Debug\Parcial 2.pdb
+C:\Users\HP EliteBook 840 G8\Source\Repos\ds4\Parcial 2\Parcial 2\obj\Debug\Parcial 2.exe.config
