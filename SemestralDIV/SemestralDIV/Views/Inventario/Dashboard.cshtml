@@ -1,0 +1,48 @@
+﻿@model SemestralDIV.Models.DashboardViewModel
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2 class="mb-4 text-secondary">Resumen General</h2>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-header">Total Activos</div>
+            <div class="card-body">
+                <h1 class="display-4">@Model.Valores.Sum(x => x)</h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <a href="@Url.Action("Registrar", "Inventario")" class="btn btn-success w-100 h-100 d-flex align-items-center justify-content-center">
+            <h3 class="m-0"><i class="fa fa-plus-circle"></i> Nuevo Ingreso</h3>
+        </a>
+    </div>
+</div>
+
+<div class="card shadow">
+    <div class="card-header bg-white">Estado de Activos</div>
+    <div class="card-body">
+        <canvas id="miGrafico" style="max-height: 400px;"></canvas>
+    </div>
+</div>
+
+<script>
+    // En MVC 5 usamos Json.Encode para pasar datos de C# a JS
+    var etiquetas = @Html.Raw(Json.Encode(Model.Etiquetas));
+    var valores = @Html.Raw(Json.Encode(Model.Valores));
+
+    var ctx = document.getElementById('miGrafico').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: etiquetas,
+            datasets: [{
+                label: 'Cantidad',
+                data: valores,
+                backgroundColor: ['#3498db', '#e74c3c', '#f1c40f'],
+            }]
+        }
+    });
+</script>

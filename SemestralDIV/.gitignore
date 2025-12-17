@@ -1,0 +1,14 @@
+# Archivos y carpetas específicos de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de compilación
+[Bb]in/
+[Oo]bj/
+
+# Otros
+*.[Cc]ache
+*.orig

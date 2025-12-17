@@ -1,0 +1,46 @@
+﻿@model SemestralDIV.Models.Articulo
+@{
+    ViewBag.Title = "Registrar Activo";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0"><i class="fa-solid fa-file-pen me-2"></i> Nuevo Ingreso de Activo</h4>
+                </div>
+                <div class="card-body p-4">
+                    @using (Html.BeginForm("Registrar", "Inventario", FormMethod.Post))
+                    {
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Número de Placa</label>
+                            @Html.TextBoxFor(m => m.NumeroPlaca, new { @class = "form-control", placeholder = "Ej: ACT-2023-001", required = "required" })
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Nombre del Artículo</label>
+                            @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control", placeholder = "Ej: Monitor Dell 24 pulgadas" })
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Descripción Técnica</label>
+                            @Html.TextAreaFor(m => m.Descripcion, new { @class = "form-control", rows = "3" })
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Ubicación Física</label>
+                            @Html.TextBoxFor(m => m.UbicacionPlano, new { @class = "form-control", placeholder = "Ej: Piso 2 - Oficina 204" })
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                            <a href="@Url.Action("Dashboard", "Inventario")" class="btn btn-secondary me-md-2">Cancelar</a>
+                            <button type="submit" class="btn btn-success px-4">Guardar en Inventario</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

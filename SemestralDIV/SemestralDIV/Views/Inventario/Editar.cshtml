@@ -1,0 +1,56 @@
+﻿@model SemestralDIV.Models.Articulo
+@{ ViewBag.Title = "Editar Activo"; }
+
+<h2 class="mb-4">Actualizar Activo</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-header bg-warning text-dark fw-bold">
+                <i class="fa-solid fa-pen-to-square"></i> Modificar Estado
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.HiddenFor(m => m.IdArticulo)
+
+                    <div class="mb-3">
+                        <label class="form-label text-muted">Placa</label>
+                        <input type="text" class="form-control" value="@Model.NumeroPlaca" disabled />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label text-muted">Nombre</label>
+                        <input type="text" class="form-control" value="@Model.Nombre" disabled />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Estado Actual</label>
+                        @Html.DropDownListFor(m => m.Estado, new List<SelectListItem>
+                        {
+                            new SelectListItem { Text = "Nuevo", Value = "Nuevo" },
+                            new SelectListItem { Text = "En funcionamiento", Value = "En funcionamiento" },
+                            new SelectListItem { Text = "Para Donación", Value = "Donacion" },
+                            new SelectListItem { Text = "Para Descarte", Value = "Descarte" }
+                        }, new { @class = "form-select" })
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Nueva Ubicación</label>
+                        @Html.TextBoxFor(m => m.UbicacionPlano, new { @class = "form-control" })
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Descripción / Observaciones</label>
+                        @Html.TextAreaFor(m => m.Descripcion, new { @class = "form-control" })
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-warning">Guardar Cambios</button>
+                        <a href="@Url.Action("Gestionar", "Inventario")" class="btn btn-light">Cancelar</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
