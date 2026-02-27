@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Parcial1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D49991F-3103-49A8-BA2D-716EEB44B470}|Parcial1\\Parcial1.csproj|c:\\users\\hp elitebook 840 g8\\source\\repos\\ds4\\parcial1\\parcial1\\appmatriz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D49991F-3103-49A8-BA2D-716EEB44B470}|Parcial1\\Parcial1.csproj|solutionrelative:parcial1\\appmatriz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D49991F-3103-49A8-BA2D-716EEB44B470}|Parcial1\\Parcial1.csproj|c:\\users\\hp elitebook 840 g8\\source\\repos\\ds4\\parcial1\\parcial1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D49991F-3103-49A8-BA2D-716EEB44B470}|Parcial1\\Parcial1.csproj|solutionrelative:parcial1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D49991F-3103-49A8-BA2D-716EEB44B470}|Parcial1\\Parcial1.csproj|c:\\users\\hp elitebook 840 g8\\source\\repos\\ds4\\parcial1\\parcial1\\matriz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D49991F-3103-49A8-BA2D-716EEB44B470}|Parcial1\\Parcial1.csproj|solutionrelative:parcial1\\matriz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Matriz.cs",
+              "DocumentMoniker": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Parcial1\\Parcial1\\Matriz.cs",
+              "RelativeDocumentMoniker": "Parcial1\\Matriz.cs",
+              "ToolTip": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Parcial1\\Parcial1\\Matriz.cs",
+              "RelativeToolTip": "Parcial1\\Matriz.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T00:16:33.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppMatriz.cs",
+              "DocumentMoniker": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Parcial1\\Parcial1\\AppMatriz.cs",
+              "RelativeDocumentMoniker": "Parcial1\\AppMatriz.cs",
+              "ToolTip": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Parcial1\\Parcial1\\AppMatriz.cs",
+              "RelativeToolTip": "Parcial1\\AppMatriz.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwCwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T00:15:55.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Parcial1\\Parcial1\\Program.cs",
+              "RelativeDocumentMoniker": "Parcial1\\Program.cs",
+              "ToolTip": "C:\\Users\\HP EliteBook 840 G8\\Source\\Repos\\ds4\\Parcial1\\Parcial1\\Program.cs",
+              "RelativeToolTip": "Parcial1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T23:45:55.456Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

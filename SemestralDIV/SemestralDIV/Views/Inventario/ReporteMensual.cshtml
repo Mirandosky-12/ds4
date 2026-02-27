@@ -1,0 +1,35 @@
+﻿@model SemestralDIV.Models.ReporteMensualViewModel
+@{ ViewBag.Title = "Reporte Mensual"; }
+
+<h2 class="mb-4 text-primary">📈 Ingresos por Mes</h2>
+
+<div class="card shadow p-4">
+    <canvas id="graficoMeses" style="max-height: 400px;"></canvas>
+</div>
+
+<script>
+    var meses = @Html.Raw(Json.Encode(Model.Meses));
+    var cantidades = @Html.Raw(Json.Encode(Model.Cantidades));
+
+    var ctx = document.getElementById('graficoMeses').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'line', // Gráfico de Líneas
+        data: {
+            labels: meses,
+            datasets: [{
+                label: 'Cantidad Registrada',
+                data: cantidades,
+                borderColor: '#28a745',
+                backgroundColor: 'rgba(40, 167, 69, 0.2)',
+                fill: true,
+                tension: 0.3
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: { beginAtZero: true, ticks: { stepSize: 1 } }
+            }
+        }
+    });
+</script>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SemestralDIV.Models.Articulo>
+@{ ViewBag.Title = "Gestión de Inventario"; }
+
+<h2 class="mb-4 text-secondary"><i class="fa-solid fa-list-check"></i> Gestión de Estados</h2>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <table class="table table-hover table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Placa</th>
+                    <th>Artículo</th>
+                    <th>Estado</th>
+                    <th>Ubicación</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="fw-bold">@item.NumeroPlaca</td>
+                        <td>@item.Nombre</td>
+                        <td>
+                            @if (item.Estado == "Nuevo")
+                            {<span class="badge bg-primary">Nuevo</span> }
+                            else if (item.Estado == "En funcionamiento")
+                            { <span class="badge bg-success">En Uso</span> }
+                            else if (item.Estado == "Donacion")
+                            { <span class="badge bg-warning text-dark">Donación</span> }
+                            else
+                            { <span class="badge bg-danger">Descarte</span>}
+                        </td>
+                        <td>@item.UbicacionPlano</td>
+                        <td>
+                            <a href="@Url.Action("Editar", "Inventario", new { id = item.IdArticulo })" class="btn btn-sm btn-outline-primary">
+                                <i class="fa-solid fa-pen"></i> Editar
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
